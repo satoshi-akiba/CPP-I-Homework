@@ -1,7 +1,5 @@
-// Assignment 3 question 2 - Satoshi Akiba 
-// Days in a month
-// User will be prompted to enter a month and year. The program will return the days in the month.
-// Limitation in this is that the error validation simply exits, does not re prompt.
+// Assignment 3 question 3 - Satoshi Akiba 
+
 #include <iostream>
 #include <iomanip>
 #include <cmath>
