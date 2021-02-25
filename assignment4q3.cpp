@@ -31,7 +31,8 @@ int main()
     }
     else   
     {
-        cout << "File not opened" <<endl;
+        cout << "File not opened. " <<endl;
+        return 0;
     }
 
     //format output
