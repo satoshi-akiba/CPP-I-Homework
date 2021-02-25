@@ -1,7 +1,7 @@
 // Assignment 3 question 3 - Satoshi Akiba 
 // Cost of a phone call
 // User will be prompted to enter a starting hour and total minutes of call. 
-// One known problem is that floats of the same number can fail equality statements (such as .59 being compared to floating point input .59)
+// One known problem is that floats of the same number can fail equality checks (such as .59 being compared to floating point input .59)
 // To work around this, floats were compared to the next highest tens place decimal (>= .6 instead of > .59)
 #include <iostream>
 #include <iomanip>

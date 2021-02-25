@@ -4,8 +4,6 @@
 
 #include <iostream>
 #include <iomanip>
-#include <cmath>
-#include <string>
 
 using namespace std;
 
@@ -66,22 +64,22 @@ int main()
                 cin >> withdrawn; 
             }
 
-        //Exit if account balance is negative
-        if (balance < 0)
-            {
-                cout << "Your account has been closed.";
-                break;
-            }
-
         //Add, subtract deposits and withdrawls
         balance += deposited;
         balance -= withdrawn;
         withdrawls += withdrawn;
         deposits += deposited;
 
-        //calculate monthly interest
+        //calculate monthly interest and balance
         interest += balance * (interestRate /12);
         balance += (balance * (interestRate / 12));
+
+        //Exit if account balance is negative
+        if (balance < 0)
+            {
+                cout << "Your account has been closed." << endl << endl;
+                break;
+            }
 
     }
 
